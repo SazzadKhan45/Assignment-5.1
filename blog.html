@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog page</title>
+    <!--  daisyui & Tailwins css-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- custom css -->
+    <style>
+        body {
+
+            font-family: "Lexend", serif;
+        }
+    </style>
+</head>
+
+<body class="max-w-7xl mx-auto">
+    <header class="sticky top-0">
+        <!-- Main Menu stsrt -->
+        <nav class="bg-gray-300 flex justify-between items-center px-8 md:justify-between lg:px-20 py-8">
+            <div class="">
+                <button
+                    class="bg-lime-600 rounded-md py-2 px-8 text-black hover:bg-orange-400 hover:text-white font-bold text-lg">Home</button>
+            </div>
+            <div class="flex justify-center items-center gap-4 absolute invisible lg:visible left-[500px]">
+                <img src="assets/logo.png">
+                <h3 class="text-black text-2xl">Donate Bangladesh</h3>
+            </div>
+            <div class="flex justify-center items-center gap-4">
+                <img src="assets/coin.png">
+                <h3 class="text-orange-500 text-2xl"><span id="main-balanace" class="font-bold text-black">5000 </span>
+                    BDT</h3>
+            </div>
+        </nav>
+        <!-- Main Menu end -->
+        <!-- Blog menu start  -->
+        <section>
+            <div class="flex gap-x-8 items-center justify-center py-10">
+                <button id="donation-btn"
+                    class="bg-lime-600 py-3 px-10 rounded-md text-white text-xl font-bold hover:bg-slate-300 hover:text-black">Donation</button>
+                <button id="transaction-history-btn"
+                    class="bg-slate-300 py-3 px-10 rounded-md text-black text-xl font-bold hover:bg-lime-600 hover:text-black">History</button>
+            </div>
+            <!-- Transaction history btn -->
+            <div id="donate-moneyihistory" class="grid grid-cols-1 lg:grid-cols-3 gap-5 px-10 hidden">
+            </div>
+        </section>
+        <!-- Blog menu end  -->
+    </header>
+
+</body>
+
+</html>
