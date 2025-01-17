@@ -26,7 +26,7 @@
         <!-- Main Menu stsrt -->
         <nav class="bg-gray-300 flex justify-between items-center px-8 md:justify-between lg:px-20 py-8">
             <div class="">
-                <button
+                <button id="blog-page"
                     class="bg-lime-600 rounded-md py-2 px-8 text-black hover:bg-orange-400 hover:text-white font-bold text-lg">Blog</button>
             </div>
             <div class="flex justify-center items-center gap-4 absolute invisible lg:visible left-[500px]">
@@ -200,6 +200,13 @@
     <script src="js/fenidonation.js"></script>
     <script src="js/noakalidonate.js"></script>
     <script src="js/injuredonation.js"></script>
+    <!-- Custom js code -->
+     <script>
+        document.getElementById('blog-page')
+        .addEventListener('click', function(){
+            window.location.href = 'blog.html';
+        })
+     </script>
 </body>
 
 </html>

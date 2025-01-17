@@ -26,7 +26,7 @@
         <!-- Main Menu stsrt -->
         <nav class="bg-gray-300 flex justify-between items-center px-8 md:justify-between lg:px-20 py-8">
             <div class="">
-                <button
+                <button id="home-page"
                     class="bg-lime-600 rounded-md py-2 px-8 text-black hover:bg-orange-400 hover:text-white font-bold text-lg">Home</button>
             </div>
             <div class="flex justify-center items-center gap-4 absolute invisible lg:visible left-[500px]">
@@ -55,9 +55,9 @@
         <!-- Blog menu end  -->
     </header>
     <!-- main  -->
-     <main class="bg-slate-800 p-10 rounded-2xl">
+     <main class="bg-slate-800 lg:p-10 rounded-2xl">
         <!-- FAQ section -->
-         <section>
+         <section class="px-4 text-center">
             <h1 class="text-white text-5xl font-bold">Important FAQ ?</h1>
             <!-- FAQ-1 start -->
             <div class="my-10">
@@ -121,6 +121,14 @@
             <!-- FAQ-1 Ended -->
          </section>
      </main>
+
+     <!-- script -->
+      <script>
+        document.getElementById('home-page')
+        .addEventListener('click', function(){
+            window.location.href = 'index.html';
+        })
+      </script>
 
 </body>
 
